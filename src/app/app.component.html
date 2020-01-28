@@ -1,0 +1,12 @@
+
+<form>
+    Enter Amount:<input type="number" min="0" id="amount" name="amount">
+    <button class="btn btn-success" id="callGo" type="submit">Get Token</button>
+    </form>
+    <div id="response"></div>
+    <form id="payform" target="payframe" action="https://test.authorize.net/payment/payment" method="post">
+    <input type="hidden" id="token" name="token" value="">
+    <input type="submit" value="Get Accept Hosted">
+    </form>
+  <iframe width="100%" height="800" frameBorder="0" name="payframe" id="payframe"></iframe>
+  
